@@ -7,7 +7,7 @@ export default function TelaMestra() {
     
   const handleNavigation = () => {
     const dado = { id: 123, nome: 'Produto X', preco: 199.99 };
-
+    
     // Em expo-router, use o pathname absoluto da rota.
     router.push({ pathname: '/screens/detalhe', params: dado });
   };
@@ -18,7 +18,7 @@ export default function TelaMestra() {
 
       <TouchableOpacity style={styles.botao} onPress={handleNavigation}>
         <Text style={styles.textoBotao}>
-          Ir para a página de Detalhes do Produto
+          Ir para a Tela de Detalhes do Produto
         </Text>
       </TouchableOpacity>
     </View>
